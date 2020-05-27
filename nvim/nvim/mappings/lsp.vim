@@ -1,7 +1,9 @@
 " language server 
-nmap <silent> <leader>ld <Plug>(coc-definition)zz
+" nmap <silent> <leader>ld <Plug>(coc-definition)zz
+nnoremap <silent><leader>ld <cmd>lua vim.lsp.buf.definition()<CR>zz
 nnoremap <silent> <leader>lD :call CocAction('jumpDefinition', 'vsplit')<CR>zz
-noremap <silent> <leader>lh :call CocAction('doHover')<CR>
+" noremap <silent> <leader>lh :call CocAction('doHover')<CR>
+nnoremap <silent> <leader>lh <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>lo :CocList outline<CR>
 nnoremap <leader>lO :packadd vista.vim <BAR> Vista<CR>
 noremap <leader>lp :CocList diagnostics<CR>

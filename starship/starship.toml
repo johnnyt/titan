@@ -16,6 +16,7 @@ prompt_order = [
     "python",
     "ruby",
     "rust",
+    "elixir",
     "terraform",
     "kubernetes",
     "nix_shell",
@@ -39,6 +40,9 @@ style = "bold red"
 [character]
 symbol = " "
 vicmd_symbol = " "
+
+[elixir]
+symbol = " "
 
 [aws]
 disabled = true
